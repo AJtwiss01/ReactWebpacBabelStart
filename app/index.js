@@ -7,11 +7,11 @@ require('./index.css');
 class App extends React.Component {
     render() {
         return (
-        <div>hello</div>
+        <div>hello {this.props.first} {this.props.last}</div>
         )
     }
 }
 
 ReactDOM.render(
-    <App />, document.getElementById('app')
+    <App first="aj" last="twiss"/>, document.getElementById('app')
 );
